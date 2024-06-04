@@ -1,0 +1,17 @@
+:root {
+  /*--font-size--*/
+  --smallsize: 10px;
+  --mediumsize: 16px;
+  --largsize: 24px;
+
+  /*--color: primary--*/
+  --white: #fff;
+  --black: #000;
+
+  /*--color: brown-palette--*/
+  /*--1 lightest--*/
+  --color-1: #f8f4e1;
+  --color-2: #af8f6f;
+  --color-3: #74512d;
+  --color-4: #543310;
+}

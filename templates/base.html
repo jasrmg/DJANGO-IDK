@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/root.css' %}" />
+
+    <title>
+      {% if title == 'Digital Clock' %} JavaScript | {{ title }} {% else %}
+      JavaScript Practice {% endif %}
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__content">
+          <a href="#" class="logo">
+            <span class="logo__text">JavaScript Practice</span> 
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="{% url 'digitalClock' %}" class="nav__link">Digital Clock</a>
+              </li>
+              <li class="nav__item">
+                <a href="{% url 'digitalClock' %}" class="nav__link">Digital Clock</a>
+              </li>
+              <li class="nav__item">
+                <a href="{% url 'digitalClock' %}" class="nav__link">Digital Clock</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>
